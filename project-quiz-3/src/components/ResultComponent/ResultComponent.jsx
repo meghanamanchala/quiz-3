@@ -1,6 +1,6 @@
 import  { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Result.css';
+import './Result.css'
 const ResultComponent = () => {
     const [attempted, setAttempted] = useState(0);
     const [correct, setCorrect] = useState(0);
@@ -33,10 +33,10 @@ const ResultComponent = () => {
                 </div>
                 <div className="btns">
                     <Link to={"/quiz"}>
-                        <button className='last' id='play'>Play Again</button>
+                        <button className='btn last' id='play'>Play Again</button>
                     </Link>
                     <Link to={"/"}>
-                        <button className='last' id='back'>Back to home</button>
+                        <button className='btn last' id='back'>Back to home</button>
                     </Link>
                 </div>
             </div>

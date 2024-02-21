@@ -32,8 +32,10 @@ const QuizComponent=()=>{
         let wrongCount = wrong;
         
         if (selectedOption === currentQuestion.answer) {
+            alert("Correct answer!");
             correctCount += 1;
         } else {
+            alert("Wrong answer!");
             wrongCount += 1;
         }
         
@@ -54,7 +56,7 @@ const QuizComponent=()=>{
             <div className="quiz">
                 <div className="containerquiz">
                     <h2>Question</h2>
-                    <p className='questionumber'>{current + 1} of 15</p>
+                    <p className='Qnum'>{current + 1} of 15</p>
                     <h4>{question}</h4>
                     <div className="options">
                         <button onClick={() => handleAnswer(optionA)}>{optionA}</button>
